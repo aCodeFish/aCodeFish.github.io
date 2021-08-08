@@ -1,0 +1,101 @@
+/* 修改首页字体 */
+@font-face {
+    font-family:'taiji';
+    src:url('./taiji.ttf'); /* 修改成你的字体 */
+    font-display:swap
+}
+h1#site-title {
+    font-size: 4em!important;
+    font-weight: 500!important;
+    font-family:taiji!important
+}
+span#subtitle {
+    font-family:taiji!important
+}
+a#site-name {
+    font-family:taiji!important
+}
+#recent-posts>.recent-post-item,.layout_page>div:first-child:not(.recent-posts),.layout_post>#page,.layout_post>#post,.read-mode .layout_post>#post {
+    background: var(--light_bg_color)
+}
+
+#aside-content .card-widget {
+    background: var(--light_bg_color)
+}
+
+#web_bg {
+    background: linear-gradient(270deg,rgba(247,149,51,.1),rgba(243,112,85,.1) 15%,rgba(239,78,123,.1) 30%,rgba(161,102,171,.1) 44%,rgba(80,115,184,.1) 58%,rgba(16,152,173,.1) 72%,rgba(7,179,155,.1) 86%,rgba(109,186,130,.1))
+}
+
+/* 设置底部透明 */
+#footer {
+    background: rgba(255,255,255,.15);
+    color: #000;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    backdrop-filter: saturate(100%) blur(5px)
+}
+
+#footer::before {
+    background: rgba(255,255,255,.15)
+}
+
+#footer #footer-wrap {
+    color: var(--font-color)
+}
+
+#footer #footer-wrap a {
+    color: var(--font-color)
+}
+
+@font-face {
+    font-family: "iconfont"; /* Project id 2730640 */
+    src: url('//at.alicdn.com/t/font_2730640_4nplo25pcet.woff2?t=1628429152445') format('woff2'),
+         url('//at.alicdn.com/t/font_2730640_4nplo25pcet.woff?t=1628429152445') format('woff'),
+         url('//at.alicdn.com/t/font_2730640_4nplo25pcet.ttf?t=1628429152445') format('truetype');
+  }
+
+/* 引入字体图标 */
+@font-face {
+    font-family: "iconfont"; /* Project id 2730640 */
+    src: url('//at.alicdn.com/t/font_2730640_pt4wlrsdxvp.woff2?t=1628429419407') format('woff2'),
+         url('//at.alicdn.com/t/font_2730640_pt4wlrsdxvp.woff?t=1628429419407') format('woff'),
+         url('//at.alicdn.com/t/font_2730640_pt4wlrsdxvp.ttf?t=1628429419407') format('truetype');
+  }
+  
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 25px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-qzone:before {
+    content: "\e600";
+    color: rgb(247, 225, 30)
+  }
+  
+  .icon-youxiang:before {
+    content: "\eef8";
+    color: rgb(199, 5, 30)
+  }
+  
+/* 版权链接样式修改 */
+
+.post .layout .post-copyright .post-copyright-info>a {
+    text-decoration: none!important;
+    color:#4490a2;
+}
+/* 每页左上角链接字的样式 */
+.page .full_page .show>span>a，
+.post .post-bg .show>span>a,
+.page .not-home-page .show>span>a{
+    font-size: 1.5em!important;
+    font-weight: 400!important;
+}
+
+/* 鼠标样式 */
+body{
+    cursor: url(https://cdn.jsdelivr.net/gh/caibhh/CDN/img/blog/default.cur),default;
+}
