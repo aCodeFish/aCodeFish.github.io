@@ -88,7 +88,7 @@ a#site-name {
     color:#4490a2;
 }
 /* 每页左上角链接字的样式 */
-.page .full_page .show>span>a，
+.page .full_page .show>span>a,
 .post .post-bg .show>span>a,
 .page .not-home-page .show>span>a{
     font-size: 1.5em!important;
