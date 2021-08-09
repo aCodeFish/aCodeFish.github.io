@@ -81,6 +81,16 @@ a#site-name {
     color: rgb(199, 5, 30)
   }
   
+  .icon-huabi:before {
+    content: "\e744";
+    font-size: 0.78em!important;
+  }
+  
+  .icon-shu:before {
+    content: "\e762";
+    font-size: 0.78em!important;
+  }
+
 /* 版权链接样式修改 */
 
 .post .layout .post-copyright .post-copyright-info>a {
