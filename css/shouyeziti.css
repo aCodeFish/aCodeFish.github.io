@@ -33,9 +33,11 @@ a#site-name {
     background: var(--light_bg_color)
 }
 
+
+/* 原渐变色背景（改为一图流后不再使用）
 #web_bg {
     background: linear-gradient(270deg, rgba(247, 149, 51, .1), rgba(243, 112, 85, .1) 15%, rgba(239, 78, 123, .1) 30%, rgba(161, 102, 171, .1) 44%, rgba(80, 115, 184, .1) 58%, rgba(16, 152, 173, .1) 72%, rgba(7, 179, 155, .1) 86%, rgba(109, 186, 130, .1))
-}
+}*/
 
 
 /* 设置底部透明 */
@@ -128,4 +130,47 @@ body {
 
 .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
     left: 0 !important
+}
+
+
+/* 背景一图流 */
+
+#web_bg {
+    background-image: url("/img/bg06.webp")!important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+
+/* 头图透明 */
+
+#page-header {
+    background: transparent!important;
+}
+
+
+/*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 *
+
+#page-header.post-bg:before {
+    background-color: transparent!important;
+}
+*/
+
+
+/* bf更新到4.0.1之后，使用这个
+   #page-header:not(.not-top-img):before {
+      background-color: transparent!important;
+  }
+   */
+
+
+/*夜间模式伪类遮罩层透明*/
+
+[data-theme="dark"] #footer::before {
+    background: transparent!important;
+}
+
+[data-theme="dark"] #page-header::before {
+    background: transparent!important;
 }
